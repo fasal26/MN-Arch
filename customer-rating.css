@@ -1,0 +1,61 @@
+.rating_container{
+    padding: 0 2rem;
+}
+
+.rating_header{
+    text-align: center;
+}
+
+.rating_header h1{
+    color: var(--color-dark-blue);
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.rating_cards{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.customer_card{
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 15px;
+    max-width: 300px;
+    padding: 40px 20px 20px;
+}
+
+.customer_card:hover{
+    border: 2px solid #1C265B;
+}
+
+.customer_details{
+    text-align: center;
+}
+
+.customer_details h2{
+    padding: 15px;
+}
+
+.customer_details p{
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.star_rating{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .rating_container{
+        padding: 0 1rem;
+    }
+    
+}

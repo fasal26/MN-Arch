@@ -1,0 +1,159 @@
+
+.button-enq {
+    background: #205669;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-color: transparent;
+    font-size: 16px;
+}
+
+.header{
+    padding: 3rem;
+    display: flex;
+    position: relative;
+}
+
+.header:before{
+    content: '';
+    position: absolute;
+    background-color: #9DFDF7;
+    opacity: 0.5;
+    width: 101px;
+    height: 199px;
+    left: 0;
+    top: 28px;
+}
+
+.header:after{
+    content: '';
+    position: absolute;
+    background-color: #9DFDF7;
+    opacity: 0.5;
+    width: 101px;
+    height: 199px;
+    right: 0;
+    bottom: -85px;
+}
+
+.header_container{
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header_container h1{
+    color: var(--color-dark-blue);
+    font-size: 82px;
+    line-height: 80px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.header_desc{
+    color: var(--color-text);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 30px 0;
+}
+
+.rating{
+    padding-top: 35px;
+    margin-bottom: 20px;
+}
+
+.rating span{
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rating p{
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.header_image_container{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    margin-right: 27px;
+    flex-direction: column;
+}
+
+.lg_img img{
+    border-radius: 15px;
+    width: 370px;
+    box-shadow: 0px 0 25px #dde0e6;
+    height: 430px;
+}
+
+.multi_img_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 69px;
+    /* text-align: start; */
+    margin-top: 25px;
+    /* margin-left: 156px; */
+}
+
+.multi_img img{
+    cursor: pointer;
+    box-shadow: 0px 0 25px #dde0e6;
+    margin: 0 0 0 15px;
+    width: 85px;
+    max-height: 110px;
+    border-radius: 20px;
+}
+
+.multi_img img:hover{
+    border: 1px solid #1C265B;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header_content h1{
+        font-size: 55px;
+        line-height: 57px;
+    }
+
+    .lg_img img{
+        width: 320px;
+        height: 390px;
+    }
+
+    .multi_img_container{
+        margin-right: 32px;
+
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    .header{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header_image_container{
+        margin-right: 0;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 437px) {
+
+    .multi_img :last-child{
+        margin-top: 15px;
+    }
+    
+}

@@ -1,0 +1,34 @@
+.review_container{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.review_items{
+    display: inline-flex;
+    justify-content: center;
+    background: #FFFFFF;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 70px;
+    border-radius: 20px;
+}
+
+.review_items h1{
+    color: #A4A4A4;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.review_content{
+    display: flex;
+    gap: 20px;
+    max-width: 219px;
+}
+
+.review_content span{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A4A4A4;
+}
