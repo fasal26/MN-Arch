@@ -15,6 +15,7 @@
 }
 
 .footer_links{
+    
     display: inline-flex;
     gap: 25px;
 }
