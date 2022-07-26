@@ -2,10 +2,10 @@
 document.getElementsByClassName('navbar_menu')[0].addEventListener('click', function (event) {
     let isFlex = document.getElementsByClassName('navbar_menu_items')[0].style.display
     if(isFlex){
-        document.getElementsByClassName('navbar_menu')[0].getElementsByTagName('img')[0].src = "/Assets/menu.png"
+        document.getElementsByClassName('navbar_menu')[0].getElementsByTagName('img')[0].src = "Assets/menu.png"
         document.getElementsByClassName('navbar_menu_items')[0].style.display = ''
     }else{
-        document.getElementsByClassName('navbar_menu')[0].getElementsByTagName('img')[0].src = "/Assets/icons8-close-30.png"
+        document.getElementsByClassName('navbar_menu')[0].getElementsByTagName('img')[0].src = "Assets/icons8-close-30.png"
         document.getElementsByClassName('navbar_menu_items')[0].style.display = 'flex'
     }
 });
@@ -38,13 +38,13 @@ function changeImg(img){
     imgSrc = img.getAttribute("src")
     let headerImage = document.getElementById('headerImg')
     switch (imgSrc) {
-        case '/Assets/multi-1.jpg':
-            headerImage.src = "/Assets/construction-concept-with-engineering-tools 1 (1).jpg"
+        case 'Assets/multi-1.jpg':
+            headerImage.src = "Assets/construction-concept-with-engineering-tools 1 (1).jpg"
             break;
-        case '/Assets/multi-2.jpg':
-            headerImage.src = "/Assets/Rectangle 13.jpg"
+        case 'Assets/multi-2.jpg':
+            headerImage.src = "Assets/Rectangle 13.jpg"
             break;
-        case '/Assets/multi-3.jpg':
+        case 'Assets/multi-3.jpg':
             break;
     
         default:
@@ -54,5 +54,5 @@ function changeImg(img){
 
 function resetImg(){
     let headerImage = document.getElementById('headerImg')
-    headerImage.src = "/Assets/construction-concept-with-engineering-tools 1 (1).jpg"
+    headerImage.src = "Assets/construction-concept-with-engineering-tools 1 (1).jpg"
 }
